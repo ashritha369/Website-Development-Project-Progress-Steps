@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+}
+#main-div {
+  display: flex;
+  /* centering elements in div */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-40%, -50%);
+  transform: translate(-40%, -50%);
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: lightgray;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  padding: 3px;
+}
+.rectangle {
+  background-color: lightgray;
+  align-items: center;
+  height: 5px;
+  /* vertical positioning */
+  transform: translateY(200%);
+  width: 100px;
+}
+
+/* styling for individual elements */
+#circle-one {
+  border: 3px solid darkred;
+}
+#circle-two {
+  border: 3px solid darkred;
+}
+
+#circle-three {
+  border: 3px solid darkred;
+}
+
+#circle-four {
+  border: 3px solid darkred;
+}
+
+#rectangle-one {
+  background-color: darkred;
+}
+
+#rectangle-two {
+  background-color: darkred;
+}
+
+#rectangle-three {
+  background-color: darkred;
+}
+
+/* Button styling */
+.buttons {
+  display: flex;
+  margin: 20px;
+  /* centering buttons in div */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#prev-button {
+  margin: 5px;
+  /* background-color: darkred; */
+  /* color: white; */
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#next-button {
+  margin: 5px;
+  /* color: white; */
+  /* background-color: darkred; */
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#prev-button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+#next-button:hover {
+  background-color: darkred;
+  color: white;
+}
