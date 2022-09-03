@@ -18,6 +18,10 @@ body {
   width: 25px;
   text-align: center;
   padding: 3px;
+  /* coloring the border */
+  border: 3px solid darkred;
+
+  /*  */
 }
 .rectangle {
   background-color: lightgray;
@@ -26,35 +30,12 @@ body {
   /* vertical positioning */
   transform: translateY(200%);
   width: 100px;
+
+  /* coloring the line connector rectangles */
+  background-color: darkred;
 }
 
 /* styling for individual elements */
-#circle-one {
-  border: 3px solid darkred;
-}
-#circle-two {
-  border: 3px solid darkred;
-}
-
-#circle-three {
-  border: 3px solid darkred;
-}
-
-#circle-four {
-  border: 3px solid darkred;
-}
-
-#rectangle-one {
-  background-color: darkred;
-}
-
-#rectangle-two {
-  background-color: darkred;
-}
-
-#rectangle-three {
-  background-color: darkred;
-}
 
 /* Button styling */
 .buttons {
