@@ -23,27 +23,30 @@ let lastChildElementId = lastChildElement.id;
 console.log(lastChildElementId);
 
 // Declaring the variables
+let currentElementId = 0;
+let ElementId = 0;
 
-// let currentCircleId = firstChildElementId;
-// console.log(currentCircleId);
+//////////////////////////////////////////
+let nextButtonClick = () => {
+  console.log(alert("next-button-clicked"));
 
-// let rectangleId;
-// let nextCircleId;
-// let nextButtonClick = () => {
-//   console.log(alert("next-button-clicked"));
-//   //    logic-next-button-click;
+  if (ElementId <= lastChildElementId) {
+    document.getElementById(`${currentElementId}`).style.backgroundColor =
+      "blue";
+    let NextElementId = ElementId + 1;
+    document.getElementById(`${NextElementId}`).style.backgroundColor = "blue";
+    let NextOfNextElementId = NextElementId + 1;
+    document.getElementById(`${NextOfNextElementId}`).style.backgroundColor =
+      "blue";
+    console.log(`next of next `, NextOfNextElementId);
+    ElementId = NextOfNextElementId;
+    console.log(`element `, ElementId);
+    currentElementId = ElementId;
+    console.log(`current `, currentElementId);
+  }
+};
 
-//   if (firstChildElementId) {
-//     firstChildElement.style.backgroundColor = "blue";
-//     rectangleId = Number(currentCircleId) + 1;
-//     console.log(rectangleId);
-//     console.log(document.getElementById(`${rectangleId}`));
-//     document.getElementById(`${rectangleId}`).style.backgroundColor = "blue";
-//     nextCircleId = Number(rectangleId) + 1;
-//     document.getElementById(`${nextCircleId}`).style.backgroundColor = "blue";
-//   }
-// };
-
-// let previousButtonClick = () => {
-//   console.log(alert("previous-button-clicked"));
-// };
+////////////////////////////////////////////////
+let previousButtonClick = () => {
+  console.log(alert("previous-button-clicked"));
+};
