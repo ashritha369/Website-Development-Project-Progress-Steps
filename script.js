@@ -47,6 +47,3 @@ let nextButtonClick = () => {
 };
 
 ////////////////////////////////////////////////
-let previousButtonClick = () => {
-  console.log(alert("previous-button-clicked"));
-};
